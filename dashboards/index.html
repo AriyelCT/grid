@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard grid media</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="menu">
+                <div class="profile">
+                    <img src="perfirosa.jpg" alt="foto perfil" class="profile"/>
+                </div>
+                <div class="name">
+                    John Doe
+                </div>
+                <div class="menu-item">
+                    <span class="material-icons">person</span>
+                    <span class="text">Profile</span>
+                </div>
+                <div class="menu-item">
+                    <span class="material-icons">home</span>
+                    <span class="text">Dashboard</span>
+                </div>
+                <div class="menu-item">
+                    <span class="material-icons">star</span>
+                    <span class="text">Apps</span>
+                </div>
+                <div class="menu-item">
+                    <span class="material-icons">bar_chart</span>
+                    <span class="text">Chart</span>
+                </div>
+                <div class="menu-item">
+                    <span class="material-icons">chat_bubble</span>
+                    <span class="text">Chat</span>
+                </div>
+                <div class="menu-item">
+                    <span class="material-icons">settings</span>
+                    <span class="text">Setting</span>
+                </div>
+                <div class="menu-item" class="help">
+                    <span class="material-icons">error</span>
+                    <span class="text">Help</span>
+                </div>
+            </div>
+        </aside>
+        <div class="main-container">
+            <header class="header">
+                    <div class="left-header">
+                        <div class="search-bar">
+                            <form class="search-container" method="GET">
+                                <span class="material-icons search-icon">search</span> 
+                                <input type="search" placeholder="Search Here">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right-header">
+                        <div class="right-header-items">
+                            <button id="theme-switch">
+                                <span class="material-icons">dark_mode</span>
+                                <span class="material-icons">light_mode</span>
+                            </button>
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="material-symbols-outlined">notifications</span>
+                            <span class="material-symbols-outlined">menu</span>
+                            
+                        </div>
+                    </div>
+            </header>
+            <main class="main-content">
+                <div class="circle-statistics">
+                    <div class="circle-box1">
+                        <div class="chart-circle">
+                            <canvas id="graficoDoughnut1"></canvas>
+                        </div>
+                        <div class="icon-circle-box1">
+                            
+                            <p class="titulo">FOLLOWS</p>
+                            <span class="material-icons">person</span>
+                        </div>
+                        <div class="texts">
+                            <p class="number">24.5K</p>
+                            <p class="subtitle">+12% followers this month</p>
+                        </div>
+                        <div class="range-container">
+                            <input type="range" class="range1">
+                        </div>
+                    </div>
+                    <div class="circle-box2">
+                        <div class="chart-circle">
+                            <canvas id="graficoDoughnut2"></canvas>
+                        </div>
+                        <div class="icon-circle-box2">
+                            <span class="material-symbols-outlined">target</span>
+                            <p class="titulo">SCOPE</p>
+                        </div>
+                        <div class="texts">
+                            
+                            <p class="number">182.4K</p>
+                            <p class="subtitle">achieved the brand this month</p>
+                        </div>
+                        <div class="range-container">
+                            <input type="range" class="range2">
+                        </div>
+                    </div>
+                    <div class="circle-box3">
+                        <div class="chart-circle">
+                            <canvas id="graficoDoughnut3"></canvas>
+                        </div>
+                        <div class="icon-circle-box3">
+                            
+                            <p class="titulo">VIEWS</p>
+                            <span class="material-symbols-outlined">adjust</span>
+                        </div>
+                        <div class="texts">
+                            
+                            <p class="number">95.1K</p>
+                            <p class="subtitle">total of views this month</p>
+                        </div>
+                        <div class="range-container">
+                            <input type="range" class="range3">
+                        </div>
+                    </div>
+                    <div class="subscriptions-box">
+                        <h3 class="nome-titulo">SUBSCRIPTION</h3>
+                        <div class="grafico-subscription">
+                            <canvas id="graficoSubscription"></canvas>
+                        </div>
+                        <div class="dots">
+                            <span class="material-icons dot1">circle</span>
+                            <span class="material-icons dot2">circle</span>
+                            <span class="material-icons dot3">circle</span>
+                        </div>
+                        <div class="legendas-subscriptions">
+                            <p class="text-subscription1">+ Followers on Sunday and Saturday</p>
+                            <p class="text-subscription2">+ Scope on Friday</p>
+                            <p class="text-subscription3">+ Views on Thursday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="view-box">
+                        <h3 class="nome-titulo">VIEWS</h3>
+                        <div class="little-box">
+                            <div class="card-pontilhado1">
+                                <span class="porcentagem">25%</span>
+                            </div>
+                            <p class="textinho">FOLLOWS</p>
+                            <p class="textinho-sub">Audience retention</p>
+                        </div>
+                        <div class="little-box">
+                            <div class="card-pontilhado2">
+                                <span class="porcentagem">75%</span>
+                            </div>
+                            <p class="textinho">SCOPE</p>
+                            <p class="textinho-sub">Click-Through Rate (CTR)</p>
+                        </div>
+                        <div class="little-box">
+                            <div class="card-pontilhado3">
+                                <span class="porcentagem">50%</span>
+                            </div>
+                            <p class="textinho">VIEWS</p>
+                            <p class="textinho-sub">Target audience</p>
+                        </div>
+                    </div>
+                    <div class="subscriptions-box1">
+                        <h3 class="nome-titulo">SUBSCRIPTION</h3>
+                        <div class="grafico-subscription1">
+                            <canvas id="graficoSubscription1"></canvas>
+                        </div>
+                        <div class="dots">
+                            <span class="material-icons dot1">circle</span>
+                            <span class="material-icons dot2">circle</span>
+                            <span class="material-icons dot3">circle</span>
+                        </div>
+                        <div class="legendas-subscriptions">
+                            <p class="text-subscription1">+ Followers on Sunday and Saturday</p>
+                            <p class="text-subscription2">+ Scope on Friday</p>
+                            <p class="text-subscription3">+ Views on Thursday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-column">
+                    <div class="earning-box">
+                        <h3 class="nome-titulo">EARNINGS</h3>
+                        <div class="grafico-earnings">
+                            <canvas id="graficoEarnings"></canvas>
+                        </div>
+                    </div>
+                    <div class="calendar-box">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>T</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td class="day-important">3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td class="day-important">14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-important">25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="charts.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
